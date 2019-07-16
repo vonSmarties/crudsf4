@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+{% block title %}Liste des élèves{% endblock %}
+{% block body %}
+  <p>liste :</p>
+  <ul>
+    {% for eleve in liste %}
+      <li>
+        <a href="/eleves/{{eleve.getId()}}">
+          {{eleve.getNom()}} alias {{eleve.getPrenom()}}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+  <a href='/eleves/add'>ajouter un élève</a>
+{% endblock %}

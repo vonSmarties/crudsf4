@@ -1,0 +1,22 @@
+body {
+  width: 420px;
+  margin: auto;
+  background-color: black;
+}
+
+h1 {
+  font-size: 23px;
+}
+
+* {
+  list-style-type: georgian;
+  text-decoration: none;
+  font-family: sans-serif;
+  color: pink;
+}
+
+input, button {
+  background-color: grey;
+  margin-left: 10px;
+  border-radius: 3px;
+}

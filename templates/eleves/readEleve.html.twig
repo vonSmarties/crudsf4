@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+{% block title %}{{eleve.getNom()}} alias {{eleve.getPrenom()}}{% endblock %}
+{% block body %}
+  <h2>élève :</h2>
+  <p>{{eleve.getNom()}} alias {{eleve.getPrenom()}}</p>
+  <p>
+    <a href="/eleves/update/{{eleve.getId()}}">modifier l'élève</a>
+  </p>
+  <p>
+    <a href="/eleves/delete/{{eleve.getId()}}">supprimer l'élève</a>
+  </p>
+  <p>
+    <a href='/eleves/liste'>retour liste</a>
+  </p>
+{% endblock %}

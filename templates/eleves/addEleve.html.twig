@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+{% block title %}Ajouter un élève{% endblock %}
+{% block body %}
+<h2>ajouter un élève</h2>
+{{form_start(form)}}
+{{form_widget(form)}}
+{{form_end(form)}}
+<p>
+  <a href='/eleves/liste'>retour liste</a>
+</p>
+{% endblock %}

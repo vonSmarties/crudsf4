@@ -1,0 +1,23 @@
+index:
+    path: /putain
+    controller: App\Controller\HelloController::index
+
+liste:
+    path: /eleves/liste
+    controller: App\Controller\EleveController::liste
+
+putain:
+    path: /eleves/add
+    controller: App\Controller\EleveController::add
+
+lire:
+    path: /eleves/{id}
+    controller: App\Controller\EleveController::read
+
+supprimer:
+    path: /eleves/delete/{id}
+    controller: App\Controller\EleveController::delete
+
+update:
+    path: /eleves/update/{id}
+    controller: App\Controller\EleveController::update
